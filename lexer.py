@@ -2,7 +2,7 @@ import token_
 
 class Lexer:
     digits = "0123456789"
-    operators = "+-*/"
+    operators = "+-*/()"
 
     def __init__(self, text):
         self.text = text

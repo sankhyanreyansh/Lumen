@@ -13,7 +13,7 @@ class Interpreter:
         elif operator.value == "*":
             output = left_node.value * right_node.value
         elif operator.value == "/":
-            output = left_node.value / right_node.value
+            return token_.Float(left_node.value / right_node.value)
 
         return token_.Float(output) if left_node.type_ == "FLOAT" or right_node.type_ == "FLOAT" else token_.Integer(output)
 
