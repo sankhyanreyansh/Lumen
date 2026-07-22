@@ -50,7 +50,7 @@ class Token:
         self.value = value
 
     def __repr__(self):
-        return f"<{self.type_}> {self.value}"
+        return str(self.value)
 
 class Operator(Token):
     def __init__(self, value):

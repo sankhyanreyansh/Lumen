@@ -1,4 +1,5 @@
 from lexer import Lexer
+from parser import Parser
 
 while True:
     text = input(">>> ")
@@ -7,4 +8,7 @@ while True:
     
     tokenizer = Lexer(text)
     tokens = tokenizer.tokenize()
-    print(tokens)
+    
+    parser = Parser(tokens)
+    tree = parser.parse()
+    print(tree)
